@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <form action="" class="card">
 
-        <h1 class="titulo">VALIDAR CARTÃO DE CRÉDITO</h1>
-        <p class="paragrafo" >Para validar o cartão basta informar <br> o número no campo 
-          abaixo contendo 16 dígitos.</p>
-          <input class="numero" type="password" name="numero"  maxlength="16" placeholder="INSIRA O NÚMERO DO CARTÃO" >
-          <input type="submit" id="send" value="enviar">
+<head>
+  <meta charset="utf-8" />
+  <title>Validador cartão de crédito</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      </form>
+<body>
+  <header>
+    <h1>VALIDADOR DE CARTÃO</h1>
+  </header>
+
+
+  <main>
+    <div class="card">
       
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+      <div class="chip-bandeira">
+
+        <div class="chip"> <img class="img-chip" src="imagens/chip.png" alt=""></div>
+
+        <div class="bandeira">
+          <div class="quadrado1"></div>
+          <div class="quadrado2"></div>
+        </div>
+
+      </div>
+
+      <div class="digitos">
+        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
+        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
+        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
+        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
+      </div>
+
+    </div>  
+
+      
+  </main>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
