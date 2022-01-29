@@ -15,7 +15,7 @@
 
   <main>
     <div class="card">
-      
+
       <div class="chip-bandeira">
 
         <div class="chip"> <img class="img-chip" src="imagens/chip.png" alt=""></div>
@@ -27,19 +27,18 @@
 
       </div>
 
-      <div class="digitos">
-        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
-        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
-        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
-        <input type="text" name="" class="numero" maxlength="4" placeholder="0000" />
-      </div>
+      <form class="digitos">
+        <input id="numero-cartao" value="" class="numero" type="number" maxlength="16" placeholder="Insira o número do cartão" oninput="validar()"/>
+        <span id="feedback"></span>
+    
+      </form>
 
-    </div>  
+    </div>
 
-      
+
   </main>
 
-  <script src="index.js" type="module"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
