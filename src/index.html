@@ -8,37 +8,64 @@
 </head>
 
 <body>
-  <header>
-    <h1>VALIDADOR DE CARTÃO</h1>
-  </header>
-
-
   <main>
-    <div class="card">
-
-      <div class="chip-bandeira">
-
-        <div class="chip"> <img class="img-chip" src="imagens/chip.png" alt=""></div>
-
-        <div class="bandeira">
-          <div class="quadrado1"></div>
-          <div class="quadrado2"></div>
-        </div>
-
+    <section id="produto">
+      <div class="titulo centralizar-produto alinhamento-between">
+        <h1>Curso Web Full Stack</h1>
+        <img class="img-mec" src="imagens/selo-mec.png" alt="Selo de reconhecimento do MEC">
       </div>
 
-      <form class="digitos">
-        <input id="numero-cartao" value="" class="numero" type="number" maxlength="16" placeholder="Insira o número do cartão" oninput="validar()"/>
-        <span id="feedback"></span>
-    
+      <div class="centralizar-produto">
+        <img class="img-notebook" src="imagens/code.png" alt="Imagem desenho de usuário utilizando notebook">
+      </div>
+
+      <div class="centralizar-produto descricao">
+        <p class="descricao-paragrafo">
+          Este curso ensinará tudo que é necessário para desenvolver sites e
+          aplicativos web, do começo ao fim.
+        </p>
+      </div>
+
+      <div class="promocao centralizar-produto">
+        <p class="valor-antigo">De: R$2.499</p>
+        <p class="valor">
+          <span>Por: </span> R$1.499 <span>em até 10x sem juros</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="pagamento">
+      <div class="titulo-pagamento">
+        <h1>Detalhes do pagamento</h1>
+      </div>
+
+      <form id="dados-pagamento">
+
+        <div class="linha">
+          <label for="nome-cartao">Nome como está no cartão</label>
+          <input id="nome-cartao" type="text" />
+        </div>
+
+        <div class="linha">
+          <label for="numero-cartao">Número do cartão de crédito</label>
+          <input id="numero-cartao" type="number" />
+        </div>
+
+        <div class="data-cvv">
+          <input type="number" placeholder="Mês" />
+          <input type="number" placeholder="Ano" />
+          <input type="number" placeholder="CVV" />
+        </div>
+
+        <div class="linha">
+          <input class="pagar" type="submit" value="PAGAR" />
+        </div>
+
       </form>
-
-    </div>
-
-
+    </section>
   </main>
-
-  <script src="index.js"></script>
 </body>
+
+<script src="index.js"></script>
 
 </html>
