@@ -1,4 +1,4 @@
-function isValid(creditCardNumber) {
+function ehValido(creditCardNumber) {
   let numeroCartao = creditCardNumber.split('').reverse();  // split = tranforma string em array 
 
   let soma = 0; 
@@ -26,8 +26,19 @@ function isValid(creditCardNumber) {
 
 }
 
+function mascarar(creditCardNumber) {
+  if(creditCardNumber.length <= 4) {
+      return creditCardNumber;
+  }
+
+  var arr = Array(creditCardNumber.length - 4).fill('#'); // fill preenche o array com algo ()
+  var mascara = arr.join('') + creditCardNumber.slice(-4);
+  return mascara;
+}
+
 const validator = {
-  isValid: isValid
+  isValid: ehValido,
+  maskify: mascarar
 };
 
 export default validator;

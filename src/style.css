@@ -148,9 +148,8 @@ input[type="submit"] {
   border: none;
 }
 
-.span-erro {
+.span-msg {
   font-size: 11px;
-  color: #ff0000;
   height: 11px;
 }
 
