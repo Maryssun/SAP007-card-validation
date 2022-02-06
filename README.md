@@ -19,13 +19,16 @@ O algoritmo de Luhn foi desenvolvido por Hans Peter Luhn, da IBM, em 1954. Ele �
 
 Este algoritmo nos retorna o resultado realizando o seguinte teste:
 
-1 - Inverto o número, no sentido da esquerda pra direita. Por exemplo, o número 1234567890123 seria reescrito como 3210987654321. E dobro o valor das casas pares: 3(4)1(0)9(16)7(12)5(8)3(4)1.    
+1.  Inverte o número, no sentido da esquerda pra direita. 
+    Por exemplo, o número 1234567890123 seria reescrito como 3210987654321. 
+    
+2.  Soma o número dobrando as posições pares. <br>
+    Caso o resultado da multiplicação seja um número com dois algarismos, soma os algarismos entre si. <br><br>
+    Exemplo: <br> 3 + (2 * 2) + 1 + (0 * 2) + 9 + (8 * 2) + 7 + (6 * 6) + 5 + (4 * 4) + 3 + (2 * 2) + 1 <br>
+             3 + (4) + 1 + (0) + 9 + (1 + 6) + 7 + (1 + 2) + 5 + (8) + 3 + (4) + 1, 16 fica 7 ( 1 + 6 ), 12 fica 3 ( 1 + 2 ). <br>
+             3 + (4) + 1 + (0) + 9 + (7) + 7 + (3) + 5 + (8) + 3 + (4) + 1 
 
-2- Caso o resultado da soma seja um número com dois dígitos, soma entre eles. Exemplo: 3(4)1(0)9(16)7(12)5(8)3(4)1, 16 ficaria 7 ( 1 + 6 ), 12 ficaria 3 ( 1 + 2 ).
-
-3- Somo todos os dígitos, sendo as pares com o valor dobrado.
-
-4 - Se o resultado dessa soma for divisível por 10, é válido. Se não, é inválido.
+3.  Se o resultado dessa soma for divisível por 10, é válido, senão é inválido.
 
 ## 2. Ideação do projeto
 
@@ -48,7 +51,9 @@ Fiz um prototipo de baixa fidelidade utilizando folha de papel e lápis.
 
 ## 6. Capturas de tela
 
+<kbd>
   <img src="src/imagens/pagina.png" alt="captura de tela da pagina"/><br/>
+</kbd>
 
 ## 7. Tecnologias utilizadas
 
@@ -78,7 +83,3 @@ Iniciar a aplicação
 Realizar os testes unitários
 
 ` $ npm test `
-
----
-
-Criado por <a href="https://github.com/Maryssun"><img src="https://avatars.githubusercontent.com/u/92697749?v=4" width="50"></a>
