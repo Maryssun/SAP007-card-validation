@@ -1,0 +1,200 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+/* PRODUTO */
+#produto {
+  background-color: #fcfcfc;
+  flex: 2;
+  justify-content: center;
+  display: block;
+}
+
+.centralizar-produto {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.alinhamento-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alinhamento-between h1 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+
+
+.alinhamento-between p {
+  color: #cc6666; 
+  text-shadow: #999999 0.1em 0.1em 0.2em;
+  font-weight: 500;
+}
+
+#produto .titulo {
+  margin-top: 15px;
+}
+
+.img-mec {
+  height: 80px;
+  transform: rotate(10deg);
+  position: relative;
+  top: 15px;
+}
+
+.img-notebook {
+  height: 300px;
+}
+
+.descricao {
+  text-align: center;
+  display: block;
+}
+
+.descricao-paragrafo {
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.promocao {
+  display: block;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
+.promocao .valor-antigo {
+  font-size: 20px;
+  text-decoration: line-through;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.promocao .valor {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+  color: #996699;
+}
+
+.promocao .valor span {
+  color: black;
+  font-size: 20px;
+}
+
+/* PAGAMENTO */
+#pagamento {
+  background-color: #f7f7f9;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titulo-pagamento {
+  margin-top: 38px;
+}
+
+.titulo-pagamento h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #666666;
+  margin-top: 0;
+}
+
+#dados-pagamento {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 10px;
+}
+
+input[type="text"], input[type="number"] {
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding: 4px;
+  text-align: center;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+  border: solid 1px #996699;
+  outline-style: none;
+}
+
+input[type="submit"] {
+  height: 40px;
+  background-color:#996699;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+}
+
+.span-msg {
+  font-size: 11px;
+  height: 11px;
+}
+
+.pagar:hover {
+  background-color: #da77b7;
+  cursor: pointer;
+}
+
+.btn-pagar {
+  display: flex;
+  align-items: flex-end
+}
+
+.data-cvv {
+  display: flex;
+  margin-top: 20px;
+}
+
+.data-cvv input {
+  width: calc(100% / 3);
+}
+
+.data-cvv input:nth-child(3) {
+  margin-left: 20px;
+}
+
+.linha {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #999999;
+  padding-bottom: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
