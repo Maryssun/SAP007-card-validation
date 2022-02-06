@@ -1,13 +1,26 @@
-function validar() {
-  var inputNumeroCartao = document.getElementById("numero-cartao"); // Pega o elemento input pelo id numero-cartao
-  var numeroCartao = inputNumeroCartao.value; // A variável número cartão é igual a propriedade value do input recuperado na linha de cima
+import validator from './validator.js';
 
-  inputNumeroCartao.value = numeroCartao.slice(0, 16); // Pega o valor do meu input e corta no 16, quando tiver 17 ou mais, corta. (Para no 16)
-  if (numeroCartao.length === 16) {
-    // Quando o valor tiver tamanho 16 (quantidade de caracteres) ele entra no bloco do if
-    console.log("validar cartao", numeroCartao);
+function pagar() {
+    const inputNumero = document.getElementById('numero-cartao'); //Aqui recuperei o input
+    const spanErroNumeroCartao = document.getElementById('msg-erro-num-cartao');
 
-    var array = numeroCartao.split(""); //Converte o numero do cartão "string" em array [1, 2, 3, 4,...]
-    console.log( array );
-  }
+    if (inputNumero.value.length < 13 || inputNumero.value.length > 19) {
+        inputNumero.style.borderColor = "#ff0000";
+        spanErroNumeroCartao.innerHTML = "Quantidade de dígitos inválida";
+    }
+    else {
+        let ehValido = validator.isValid(inputNumero.value);
+        if (ehValido === true) {
+            inputNumero.style.borderColor = "#56e827"; //Pega meu input numero, acessa a propriedade style e muda a cor da minha borda
+            spanErroNumeroCartao.innerHTML = "";
+        }
+        else {
+            inputNumero.style.borderColor = "#ff0000";
+            spanErroNumeroCartao.innerHTML = "Número de cartão inválido";
+        }
+    }
+
 }
+
+var inputPagar = document.getElementById("pagar");
+inputPagar.addEventListener("click", pagar); 

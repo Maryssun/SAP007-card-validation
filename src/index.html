@@ -39,7 +39,7 @@
         <h1>Detalhes do pagamento</h1>
       </div>
 
-      <form id="dados-pagamento">
+      <form id="dados-pagamento" onsubmit="return false">
 
         <div class="linha">
           <label for="nome-cartao">Nome como está no cartão</label>
@@ -47,8 +47,9 @@
         </div>
 
         <div class="linha">
-          <label for="numero-cartao">Número do cartão de crédito</label>
-          <input id="numero-cartao" type="number" />
+          <label for="numero-cartao">Número do cartão de crédito</label> <!-- INPUT CARTAO-->
+          <input id="numero-cartao" type="number" value="" />
+          <span class="span-erro" id="msg-erro-num-cartao"></span>
         </div>
 
         <div class="data-cvv">
@@ -58,14 +59,16 @@
         </div>
 
         <div class="linha">
-          <input class="pagar" type="submit" value="PAGAR" />
+          <input id="pagar" class="pagar" type="submit" value="PAGAR" />
         </div>
-
+        
       </form>
     </section>
   </main>
-</body>
 
-<script src="index.js"></script>
+  <script src="index.js" type="module">
+    import {pagar} from "index.js";
+  </script>
+</body>
 
 </html>
