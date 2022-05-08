@@ -40,7 +40,7 @@ A implementar função que identifique a bandeira do cartão e ao identificar mo
 
 ## 4. Metodologia Ágil
 
-Para me organizar durante as Sprints do projeto, utilizei o Trello. O que facilitou alcançar objetivos maiores através dos babies steps. 
+Para me organizar durante as Sprints do projeto, utilizei o Trello. O que facilitou alcançar objetivos maiores através dos baby steps. 
 Assim como as cerimonias da metodologia ágil: Daily, Sprint Planning, Sprint Review, Sprint Retrospective, e Sprint Checkout.
 
 ## 5. Design do projeto
