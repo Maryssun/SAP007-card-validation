@@ -10,6 +10,7 @@
 - [6. Capturas de tela](#7-capturas-de-tela)
 - [7. Tecnologias utilizadas](#8-tecnologias-utilizadas)
 - [8. Como usar](#9-como-usar)
+- [9. Autora](#9-autora)
 
 ---
 
@@ -83,3 +84,21 @@ Iniciar a aplicação
 Realizar os testes unitários
 
 ` $ npm test or yarn test`
+
+
+## .9 Autora
+
+
+<div>
+   <img alt="Dayanne Maryssol" height="150" src="Dayanne Maryssol de Andrade Almeida" height="150" src="https://avatars.githubusercontent.com/u/92697749?v=4">">
+</div>
+<div align="center">
+  
+[Dayanne Maryssol](https://github.com/Maryssun)
+
+**Projeto do Bootcamp da _[Laboratoria](https://hub.laboratoria.la/br)_**
+
+<a href = "mailto:maryssol.dayanne@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+<a href="https://www.linkedin.com/in/dayannemaryssol/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+
+  </div>
