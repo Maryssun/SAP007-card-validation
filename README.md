@@ -70,16 +70,16 @@ Você precisará usar o Node.js
 
 Clonar o projeto
 
-` $ git clone `
+` $ git clone https://github.com/Lud-ic/SAP007-card-validation.git`
 
 Instalar as dependências do projeto
 
-` $ npm i `
+` $ npm install or yarn install`
 
 Iniciar a aplicação
 
-` $ npm run start `
+` $ npm start or yarn start`
 
 Realizar os testes unitários
 
-` $ npm test `
+` $ npm test or yarn test`
