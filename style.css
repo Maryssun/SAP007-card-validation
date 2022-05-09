@@ -7,15 +7,6 @@ body {
   margin: 0;
 }
 
-.menu-topo {
-  background-color: rgba(153,102,153, 0.8);
-  height: 60px;
-}
-
-.logo-img {
-  height: 60px;
-}
-
 main {
   display: flex;
   height: 100vh;
@@ -47,6 +38,8 @@ main {
   font-size: 27px;
   font-weight: bold;
 }
+
+
 
 .alinhamento-between p {
   color: #cc6666; 
@@ -113,7 +106,6 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 
 .titulo-pagamento {
